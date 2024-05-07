@@ -16,10 +16,6 @@ enabled = false
 interpreter_constraints = ["CPython==3.12.*"]
 enable_resolves = true
 
-[export]
-py_resolve_format = "symlinked_immutable_virtualenv"
-resolve = ["python-default"]
-
 [source]
 root_patterns = [
   '/bases',
