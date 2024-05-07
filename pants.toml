@@ -21,4 +21,5 @@ root_patterns = [
   '/bases',
   '/components',
   '/test',
+  '/projects',
 ]
