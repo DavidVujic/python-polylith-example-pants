@@ -1,0 +1,28 @@
+[GLOBAL]
+pants_version = "2.20.0"
+backend_packages = [
+  "pants.backend.shell",
+  "pants.backend.python",
+  "pants.backend.python.lint.black",
+  "pants.backend.python.lint.flake8",
+  "pants.backend.python.lint.isort",
+  "pants.backend.python.typecheck.mypy",
+]
+
+[anonymous-telemetry]
+enabled = false
+
+[python]
+interpreter_constraints = [">=3.10.*"]
+enable_resolves = true
+
+[export]
+py_resolve_format = "symlinked_immutable_virtualenv"
+resolve = ["python-default"]
+
+[source]
+root_patterns = [
+  '/bases',
+  '/components',
+  '/test',
+]
