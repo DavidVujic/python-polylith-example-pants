@@ -8,10 +8,6 @@ version = "0.0.1"
 description = 'A Python Polylith example code repo'
 authors = [{ name = "David Vujic" }]
 
-dependencies = [
-  "fastapi~=0.106.0",
-  "uvicorn~=0.25.0",
-]
 
 [tool.polylith.bricks]
 "../../bases/example/greet_api" = "example/greet_api"
