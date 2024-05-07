@@ -8,3 +8,5 @@ exclude =
     dist,
     .venv,
     ./development/*.py,
+    .pants.d
+    3rdparty
