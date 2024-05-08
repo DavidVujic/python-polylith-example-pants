@@ -7,6 +7,12 @@ name = "my_fastapi_project"
 version = "0.0.1"
 description = 'A Python Polylith example code repo'
 authors = [{ name = "David Vujic" }]
+dependencies = [
+  "fastapi~=0.111.0",
+  "uvicorn~=0.29.0",
+]
+
+requires-python = ">=3.10"
 
 [tool.hatch.build.hooks.polylith-bricks]
 
