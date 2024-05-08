@@ -1263,19 +1263,19 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "5cd82d48a3dd89dee1f9d64420aa20ae65cfbd00668d6f094d7578a78efbb77b",
-              "url": "https://files.pythonhosted.org/packages/07/fa/c96545d741f2fd47f565e4e06bfef0962add790cb9c2289d900102b55eca/tomlkit-0.12.4-py3-none-any.whl"
+              "hash": "af914f5a9c59ed9d0762c7b64d3b5d5df007448eb9cd2edc8a46b1eafead172f",
+              "url": "https://files.pythonhosted.org/packages/73/6d/b5406752c4e4ba86692b22fab0afed8b48f16bdde8f92e1d852976b61dc6/tomlkit-0.12.5-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "7ca1cfc12232806517a8515047ba66a19369e71edf2439d0f5824f91032b6cc3",
-              "url": "https://files.pythonhosted.org/packages/7d/49/4c0764898ee67618996148bdba4534a422c5e698b4dbf4001f7c6f930797/tomlkit-0.12.4.tar.gz"
+              "hash": "eef34fba39834d4d6b73c9ba7f3e4d1c417a4e56f89a7e96e090dd0d24b8fb3c",
+              "url": "https://files.pythonhosted.org/packages/2b/ab/18f4c8f2bec75eb1a7aebcc52cdb02ab04fd39ff7025bb1b1c7846cc45b8/tomlkit-0.12.5.tar.gz"
             }
           ],
           "project_name": "tomlkit",
           "requires_dists": [],
           "requires_python": ">=3.7",
-          "version": "0.12.4"
+          "version": "0.12.5"
         },
         {
           "artifacts": [
