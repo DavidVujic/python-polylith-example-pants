@@ -4,7 +4,7 @@ python_distribution(
     name="my-fastapi-project",
     dependencies=[
         ":pyproject",
-        "components/example/greeting:greeting",
+        "bases/example/greet_api:greet_api",
     ],
     provides=python_artifact(),
     sdist = False,
