@@ -1,9 +1,9 @@
-resource(name="pyproject", source="pyproject.toml")
+resource(name="consumer-pyproject", source="pyproject.toml")
 
 python_distribution(
     name="consumer-project",
     dependencies=[
-        ":pyproject",
+        ":consumer-pyproject",
         "bases/example/consumer:consumer",
     ],
     provides=python_artifact(),

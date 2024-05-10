@@ -1,9 +1,9 @@
-resource(name="pyproject", source="pyproject.toml")
+resource(name="message-pyproject", source="pyproject.toml")
 
 python_distribution(
-    name="consumer-project",
+    name="message-fastapi-project",
     dependencies=[
-        ":pyproject",
+        ":message-pyproject",
         "bases/example/message_api:message_api",
     ],
     provides=python_artifact(),

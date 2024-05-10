@@ -1,9 +1,9 @@
-resource(name="pyproject", source="pyproject.toml")
+resource(name="my-fastapi-pyproject", source="pyproject.toml")
 
 python_distribution(
     name="my-fastapi-project",
     dependencies=[
-        ":pyproject",
+        ":my-fastapi-pyproject",
         "bases/example/greet_api:greet_api",
     ],
     provides=python_artifact(),
