@@ -28,8 +28,8 @@ Tools like _Poetry_, _Hatch_ and _PDM_ do that when the virtual environment is c
 With a `.pth` file in place, you will be able to navigate the Python source code from the IDE as expected.
 
 ### A custom bash script
-At the root of this repo, you will find a `generate-venv.sh` script, that will create a `.venv` with a `.pth` file.
-You should now be all set!
+At the `development/scripts` folder of this repo, you will find a `generate-venv.sh`
+that will create a `.venv` with a `.pth` file. You are now all set and ready to develop!
 
 ### The Polylith CLI
 By adding the `polylith-cli` library to the top `pyproject.toml`, the `poly` command will be available in the virtual environment.
