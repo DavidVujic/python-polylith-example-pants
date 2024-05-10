@@ -16,8 +16,8 @@ requires-python = ">=3.10"
 
 [tool.hatch.build.hooks.polylith-bricks]
 
-[tool.polylith.build]
-top-namespace = "my_custom_ns"
+[tool.hatch.build.targets.wheel]
+packages = ["example"]
 
 [tool.polylith.bricks]
 "../../bases/example/greet_api" = "example/greet_api"

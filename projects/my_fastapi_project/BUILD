@@ -7,6 +7,5 @@ python_distribution(
         "bases/example/greet_api:greet_api",
     ],
     provides=python_artifact(),
-    sdist = False,
     generate_setup = False,
 )
