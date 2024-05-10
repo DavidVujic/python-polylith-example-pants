@@ -20,7 +20,7 @@ enable_resolves = true
 shell = "ipython"
 
 [export]
-py_resolve_format = "symlinked_immutable_virtualenv"
+py_resolve_format = "mutable_virtualenv"
 resolve = "python-default"
 
 [source]
