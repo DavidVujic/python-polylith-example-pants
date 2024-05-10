@@ -15,5 +15,4 @@ done
 
 # Create a .venv symlink
 PYTHON_VERSION=$(python --version | sed 's/Python //g')
-VENV=$(find ./dist -name $PYTHON_VERSION)
-ln -s $VENV ./.venv
+ln -s ./dist/export/python/virtualenvs/python-default/$PYTHON_VERSION ./.venv
