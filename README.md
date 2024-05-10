@@ -53,3 +53,55 @@ With the virtual environment activated, you can also run code using your favorit
 ``` shell
 ipython
 ```
+
+### Packaging projects
+Packaging a project can be done using Pants.
+
+Example: creating a `wheel` and an `sdist` for the _my-fastapi-project_
+``` shell
+pants package projects/my_fastapi_project:my-fastapi-project
+```
+
+#### PEP 517
+Pants will expect a `BUILD` file in the project folder. The `pants package` goal has support for the
+__PEP 517__ specification.
+
+__Polylith__ is using the `pyproject.toml` to define the used _bricks_ in a project.
+By adding __Hatchling__ as the build backend, __Pants__ will act as the build frontend for it
+and the artifacts will be created according to what's defined in the `pyproject.toml`.
+
+The BUILD file of a project:
+add the `pyproject.toml` and the entry point as dependencies.
+
+``` python
+resource(name="pyproject", source="pyproject.toml")
+
+python_distribution(
+    name="my-fastapi-project",
+    dependencies=[
+        ":pyproject",
+        "bases/example/greet_api:greet_api",
+    ],
+    provides=python_artifact(),
+    generate_setup = False,
+)
+```
+
+#### A project-specific configuration
+
+Example, the build backend:
+``` toml
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+```
+
+Example, the Polylith bricks:
+``` toml
+[tool.hatch.build.hooks.polylith-bricks]
+
+[tool.polylith.bricks]
+"../../bases/example/greet_api" = "example/greet_api"
+"../../components/example/greeting" = "example/greeting"
+"../../components/example/log" = "example/log"
+```
